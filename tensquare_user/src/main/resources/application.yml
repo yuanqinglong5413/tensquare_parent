@@ -1,0 +1,17 @@
+server:
+  port: 9008
+spring:
+  application:
+    name: tensquare-user   #  服务名字,用于服务调用.不能写_ springcloud不识别
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.110.130:3306/tensquare_user?characterEncoding=utf-8
+    username: root
+    password: 123456
+  jpa:       #  SpringDataJPA的 配置
+    database: mysql
+    show-sql: true
+  redis:
+    host: 192.168.110.130
+  rabbitmq:
+    host: 192.168.110.130
